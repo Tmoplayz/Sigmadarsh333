@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { Search, Gamepad2, X, Maximize2, Ghost, ShieldAlert, ExternalLink } from 'lucide-react';
+import { Search, Gamepad2, X, Maximize2, Ghost, ShieldAlert, ExternalLink, Github } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import gamesData from './data/games.json';
 
@@ -46,8 +46,8 @@ export default function App() {
     };
   }, [isPanicMode]);
 
-  const openAboutBlank = () => {
-    const url = window.location.href;
+  const openAboutBlank = (targetUrl) => {
+    const url = targetUrl || window.location.href;
     const win = window.open();
     if (!win) {
       showNotification('Popup blocked! Please allow popups for this site.');
@@ -119,12 +119,21 @@ export default function App() {
               <ShieldAlert size={20} />
             </button>
             <button
-              onClick={openAboutBlank}
+              onClick={() => openAboutBlank()}
               className="p-2 bg-white/5 hover:bg-white/10 text-white/60 rounded-lg transition-colors"
               title="Open in About:Blank"
             >
               <Ghost size={20} />
             </button>
+            <a
+              href="https://tamoplayz890.github.io/react-example/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-white/5 hover:bg-white/10 text-white/60 rounded-lg transition-colors"
+              title="GitHub Mirror"
+            >
+              <Github size={20} />
+            </a>
           </div>
         </div>
       </nav>
@@ -144,11 +153,19 @@ export default function App() {
                 <h2 className="text-2xl font-bold tracking-tight">{selectedGame.title}</h2>
               </div>
               <div className="flex items-center gap-2">
+                <button
+                  onClick={() => openAboutBlank(selectedGame.url)}
+                  className="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 rounded-lg text-sm font-medium transition-colors"
+                  title="Open Game in Cloaked Tab"
+                >
+                  <Ghost size={16} />
+                  Cloak Game
+                </button>
                 <a
                   href={selectedGame.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 rounded-lg text-sm font-medium transition-colors"
+                  className="flex items-center gap-2 px-4 py-2 bg-emerald-500 text-black hover:bg-emerald-400 rounded-lg text-sm font-bold transition-colors shadow-[0_0_15px_rgba(16,185,129,0.2)]"
                 >
                   <ExternalLink size={16} />
                   Open in New Tab
@@ -205,7 +222,13 @@ export default function App() {
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
                     whileHover={{ y: -5 }}
-                    onClick={() => setSelectedGame(game)}
+                    onClick={() => {
+                      if (game.id === 'nebula-github') {
+                        window.open(game.url, '_blank', 'noopener,noreferrer');
+                      } else {
+                        setSelectedGame(game);
+                      }
+                    }}
                     className="group cursor-pointer bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-all duration-300"
                   >
                     <div className="aspect-[4/3] overflow-hidden relative">
@@ -252,7 +275,7 @@ export default function App() {
           
           <div className="flex gap-8 text-sm text-white/40">
             <a href="#" className="hover:text-white transition-colors">Discord</a>
-            <a href="#" className="hover:text-white transition-colors">GitHub</a>
+            <a href="https://tamoplayz890.github.io/react-example/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">GitHub Mirror</a>
             <a href="#" className="hover:text-white transition-colors">Privacy</a>
             <a href="#" className="hover:text-white transition-colors">Terms</a>
           </div>

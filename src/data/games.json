@@ -1,5 +1,12 @@
 [
   {
+    "id": "nebula-github",
+    "title": "Nebula Hub (GitHub Mirror)",
+    "thumbnail": "https://picsum.photos/seed/github/400/300",
+    "url": "https://tamoplayz890.github.io/react-example/",
+    "description": "Access the official GitHub mirror of Nebula Games Hub. Fast, reliable, and always unblocked."
+  },
+  {
     "id": "2048",
     "title": "2048",
     "thumbnail": "https://picsum.photos/seed/2048/400/300",
