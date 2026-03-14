@@ -126,7 +126,7 @@ export default function App() {
               <Ghost size={20} />
             </button>
             <a
-              href="https://tamoplayz890.github.io/react-example/"
+              href="https://tmoplayz.github.io/Sigmadarsh333/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 bg-white/5 hover:bg-white/10 text-white/60 rounded-lg transition-colors"
