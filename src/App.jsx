@@ -7,8 +7,14 @@ export default function App() {
   const [selectedGame, setSelectedGame] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [isPanicMode, setIsPanicMode] = useState(false);
+  const [notification, setNotification] = useState(null);
 
   const games = gamesData;
+
+  const showNotification = (message) => {
+    setNotification(message);
+    setTimeout(() => setNotification(null), 3000);
+  };
 
   const filteredGames = useMemo(() => {
     return games.filter(game => 
@@ -44,7 +50,7 @@ export default function App() {
     const url = window.location.href;
     const win = window.open();
     if (!win) {
-      alert('Popup blocked! Please allow popups for this site.');
+      showNotification('Popup blocked! Please allow popups for this site.');
       return;
     }
     win.document.body.style.margin = '0';
@@ -59,7 +65,28 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-sans selection:bg-emerald-500 selection:text-black">
+    <div className="min-h-screen bg-[#0a0a0a] text-white font-sans selection:bg-emerald-500 selection:text-black relative overflow-x-hidden">
+      {/* Nebula Background Effect */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-emerald-500/10 blur-[120px] rounded-full animate-pulse" />
+        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-500/10 blur-[120px] rounded-full animate-pulse delay-700" />
+      </div>
+
+      {/* Notification Toast */}
+      <AnimatePresence>
+        {notification && (
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 px-6 py-3 bg-red-500 text-white rounded-full shadow-lg font-medium flex items-center gap-2"
+          >
+            <ShieldAlert size={18} />
+            {notification}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* Navigation */}
       <nav className="border-b border-white/10 bg-black/50 backdrop-blur-md sticky top-0 z-40">
         <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">

@@ -131,5 +131,33 @@
     "thumbnail": "https://picsum.photos/seed/roblox/400/300",
     "url": "https://now.gg/apps/roblox-corporation/5349/roblox.html",
     "description": "The ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine."
+  },
+  {
+    "id": "bitlife",
+    "title": "BitLife",
+    "thumbnail": "https://picsum.photos/seed/bitlife/400/300",
+    "url": "https://bitlifeonline.io/",
+    "description": "Live your life the way you want in this text-based life simulator."
+  },
+  {
+    "id": "crossy-road",
+    "title": "Crossy Road",
+    "thumbnail": "https://picsum.photos/seed/crossy/400/300",
+    "url": "https://crossyroad.io/",
+    "description": "Why did the chicken cross the road? Find out in this endless hopper."
+  },
+  {
+    "id": "subway-surfers",
+    "title": "Subway Surfers",
+    "thumbnail": "https://picsum.photos/seed/subway/400/300",
+    "url": "https://subwaysurfers.io/",
+    "description": "Dash as fast as you can! Dodge the oncoming trains."
+  },
+  {
+    "id": "geometry-dash",
+    "title": "Geometry Dash",
+    "thumbnail": "https://picsum.photos/seed/geometry/400/300",
+    "url": "https://geometrydash.io/",
+    "description": "Jump and fly your way through danger in this rhythm-based action platformer."
   }
 ]
