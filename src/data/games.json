@@ -1,0 +1,135 @@
+[
+  {
+    "id": "2048",
+    "title": "2048",
+    "thumbnail": "https://picsum.photos/seed/2048/400/300",
+    "url": "https://play2048.co/",
+    "description": "Join the numbers and get to the 2048 tile!"
+  },
+  {
+    "id": "slope",
+    "title": "Slope",
+    "thumbnail": "https://picsum.photos/seed/slope/400/300",
+    "url": "https://kdata1.com/2020/05/slope/",
+    "description": "A fast-paced 3D running game."
+  },
+  {
+    "id": "tetris",
+    "title": "Tetris",
+    "thumbnail": "https://picsum.photos/seed/tetris/400/300",
+    "url": "https://tetris.com/play-tetris",
+    "description": "The classic block-stacking puzzle game."
+  },
+  {
+    "id": "flappy-bird",
+    "title": "Flappy Bird",
+    "thumbnail": "https://picsum.photos/seed/flappy/400/300",
+    "url": "https://flappybird.io/",
+    "description": "Fly between the pipes without crashing."
+  },
+  {
+    "id": "minecraft-classic",
+    "title": "Minecraft Classic",
+    "thumbnail": "https://picsum.photos/seed/minecraft/400/300",
+    "url": "https://classic.minecraft.net/",
+    "description": "The original Minecraft in your browser."
+  },
+  {
+    "id": "cookie-clicker",
+    "title": "Cookie Clicker",
+    "thumbnail": "https://picsum.photos/seed/cookie/400/300",
+    "url": "https://orteil.dashnet.org/cookieclicker/",
+    "description": "Click the cookie and build an empire."
+  },
+  {
+    "id": "paper-io",
+    "title": "Paper.io 2",
+    "thumbnail": "https://picsum.photos/seed/paperio/400/300",
+    "url": "https://paper-io.com/",
+    "description": "Capture territory and defeat your opponents."
+  },
+  {
+    "id": "hole-io",
+    "title": "Hole.io",
+    "thumbnail": "https://picsum.photos/seed/holeio/400/300",
+    "url": "https://hole-io.com/",
+    "description": "Consume everything in the city as a black hole."
+  },
+  {
+    "id": "bloxd-io",
+    "title": "Bloxd.io",
+    "thumbnail": "https://picsum.photos/seed/bloxd/400/300",
+    "url": "https://bloxd.io/",
+    "description": "A Minecraft-inspired web game with multiple modes like survival, creative, and parkour."
+  },
+  {
+    "id": "shell-shockers",
+    "title": "Shell Shockers",
+    "thumbnail": "https://picsum.photos/seed/shell/400/300",
+    "url": "https://shellshock.io/",
+    "description": "The world's most advanced egg-based multiplayer shooter!"
+  },
+  {
+    "id": "1v1-lol",
+    "title": "1v1.LOL",
+    "thumbnail": "https://picsum.photos/seed/1v1/400/300",
+    "url": "https://1v1.lol/",
+    "description": "Build and fight in this competitive third-person shooter."
+  },
+  {
+    "id": "little-alchemy-2",
+    "title": "Little Alchemy 2",
+    "thumbnail": "https://picsum.photos/seed/alchemy/400/300",
+    "url": "https://littlealchemy2.com/",
+    "description": "Mix elements to create the world from scratch."
+  },
+  {
+    "id": "venge-io",
+    "title": "Venge.io",
+    "thumbnail": "https://picsum.photos/seed/venge/400/300",
+    "url": "https://venge.io/",
+    "description": "A fast-paced objective-based multiplayer FPS."
+  },
+  {
+    "id": "zombs-royale",
+    "title": "ZombsRoyale.io",
+    "thumbnail": "https://picsum.photos/seed/zombs/400/300",
+    "url": "https://zombsroyale.io/",
+    "description": "Fast-paced 2D battle royale game."
+  },
+  {
+    "id": "krunker",
+    "title": "Krunker.io",
+    "thumbnail": "https://picsum.photos/seed/krunker/400/300",
+    "url": "https://krunker.io/",
+    "description": "A fast-paced pixelated first-person shooter."
+  },
+  {
+    "id": "slither-io",
+    "title": "Slither.io",
+    "thumbnail": "https://picsum.photos/seed/slither/400/300",
+    "url": "https://slither.io/",
+    "description": "Grow your snake and become the biggest on the server."
+  },
+  {
+    "id": "agar-io",
+    "title": "Agar.io",
+    "thumbnail": "https://picsum.photos/seed/agar/400/300",
+    "url": "https://agar.io/",
+    "description": "Eat smaller cells and avoid being eaten by larger ones."
+  },
+  {
+    "id": "retro-bowl",
+    "title": "Retro Bowl",
+    "thumbnail": "https://picsum.photos/seed/retrobowl/400/300",
+    "url": "https://game311.github.io/retro-bowl/",
+    "description": "The perfect game for the armchair quarterback to finally prove a point."
+  },
+  {
+    "id": "roblox",
+    "title": "Roblox",
+    "thumbnail": "https://picsum.photos/seed/roblox/400/300",
+    "url": "https://now.gg/apps/roblox-corporation/5349/roblox.html",
+    "description": "The ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine."
+  }
+]
